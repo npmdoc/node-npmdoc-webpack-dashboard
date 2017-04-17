@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/FormidableLabs/webpack-dashboard#readme"
-
-    >webpack-dashboard (v0.3.0)</a>
+    <a href="https://github.com/FormidableLabs/webpack-dashboard#readme">webpack-dashboard (v0.3.0)</a>
 </h1>
 <h4>a CLI dashboard for webpack dev server</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.webpack-dashboard">module webpack-dashboard</a><ol>
 
@@ -152,10 +145,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Dashboard(options) {
-  var title = options &#x26;&#x26; options.title || &#x22;webpack-dashboard&#x22;;
+  var title = options &amp;&amp; options.title || "webpack-dashboard";
 
-  this.color = options &#x26;&#x26; options.color || &#x22;green&#x22;;
-  this.minimal = options &#x26;&#x26; options.minimal || false;
+  this.color = options &amp;&amp; options.color || "green";
+  this.minimal = options &amp;&amp; options.minimal || false;
   this.setData = this.setData.bind(this);
 
   this.screen = blessed.screen({
@@ -168,10 +161,10 @@
 
   this.layoutLog.call(this);
   this.layoutStatus.call(this);
-  !this.minimal &#x26;&#x26; this.layoutModules.call(this);
-  !this.minimal &#x26;&#x26; this.layoutAssets.call(this);
+  !this.minimal &amp;&amp; this.layoutModules.call(this);
+  !this.minimal &amp;&amp; this.layoutAssets.call(this);
 
-  this.screen.key([&#x22;escape&#x22;, &#x22;q&#x22;, &#x22;C-c&#x22;], function() {
+  this.screen.key(["escape", "q", "C-c"], function() {
     process.exit(0);
   });
 
@@ -192,7 +185,7 @@
     <li>description and source-code<pre class="apidocCodePre">function formatModules(stats) {
   var json = stats.toJson();
   var trees;
-  if (!json.hasOwnProperty(&#x27;modules&#x27;)) {
+  if (!json.hasOwnProperty('modules')) {
     trees = json.children.map(bundleSizeTree);
   } else {
     trees = [bundleSizeTree(json)];
@@ -215,40 +208,40 @@
   var output = [];
   var hasErrors = stats.hasErrors();
   var hasWarnings = stats.hasWarnings();
-  if (!hasErrors &#x26;&#x26; !hasWarnings) {
-    output.push(&#x27;{green-fg}Compiled successfully!{/}&#x27;);
-    output.push(&#x27;&#x27;);
+  if (!hasErrors &amp;&amp; !hasWarnings) {
+    output.push('{green-fg}Compiled successfully!{/}');
+    output.push('');
 
     return lineJoin(output);
   }
 
   var json = stats.toJson();
   var formattedErrors = json.errors.map(function(message) {
-    return &#x27;Error in &#x27; + formatMessage(message);
+    return 'Error in ' + formatMessage(message);
   });
   var formattedWarnings = json.warnings.map(function(message) {
-    return &#x27;Warning in &#x27; + formatMessage(message);
+    return 'Warning in ' + formatMessage(message);
   });
 
   if (hasErrors) {
-    output.push(&#x27;{red-fg}Failed to compile.{/}&#x27;);
-    output.push(&#x27;&#x27;);
+    output.push('{red-fg}Failed to compile.{/}');
+    output.push('');
     if (formattedErrors.some(isLikelyASyntaxError)) {
       formattedErrors = formattedErrors.filter(isLikelyASyntaxError);
     }
     formattedErrors.forEach(function(message) {
       output.push(message);
-      output.push(&#x27;&#x27;);
+      output.push('');
     });
     return lineJoin(output);
   }
 
   if (hasWarnings) {
-    output.push(&#x27;{yellow-fg}Compiled with warnings.{/yellow-fg}&#x27;);
-    output.push(&#x27;&#x27;);
+    output.push('{yellow-fg}Compiled with warnings.{/yellow-fg}');
+    output.push('');
     formattedWarnings.forEach(function(message) {
       output.push(message);
-      output.push(&#x27;&#x27;);
+      output.push('');
     });
 
     return lineJoin(output);
@@ -289,7 +282,7 @@
     <li>description and source-code<pre class="apidocCodePre">function formatModules(stats) {
   var json = stats.toJson();
   var trees;
-  if (!json.hasOwnProperty(&#x27;modules&#x27;)) {
+  if (!json.hasOwnProperty('modules')) {
     trees = json.children.map(bundleSizeTree);
   } else {
     trees = [bundleSizeTree(json)];
@@ -317,40 +310,40 @@
   var output = [];
   var hasErrors = stats.hasErrors();
   var hasWarnings = stats.hasWarnings();
-  if (!hasErrors &#x26;&#x26; !hasWarnings) {
-    output.push(&#x27;{green-fg}Compiled successfully!{/}&#x27;);
-    output.push(&#x27;&#x27;);
+  if (!hasErrors &amp;&amp; !hasWarnings) {
+    output.push('{green-fg}Compiled successfully!{/}');
+    output.push('');
 
     return lineJoin(output);
   }
 
   var json = stats.toJson();
   var formattedErrors = json.errors.map(function(message) {
-    return &#x27;Error in &#x27; + formatMessage(message);
+    return 'Error in ' + formatMessage(message);
   });
   var formattedWarnings = json.warnings.map(function(message) {
-    return &#x27;Warning in &#x27; + formatMessage(message);
+    return 'Warning in ' + formatMessage(message);
   });
 
   if (hasErrors) {
-    output.push(&#x27;{red-fg}Failed to compile.{/}&#x27;);
-    output.push(&#x27;&#x27;);
+    output.push('{red-fg}Failed to compile.{/}');
+    output.push('');
     if (formattedErrors.some(isLikelyASyntaxError)) {
       formattedErrors = formattedErrors.filter(isLikelyASyntaxError);
     }
     formattedErrors.forEach(function(message) {
       output.push(message);
-      output.push(&#x27;&#x27;);
+      output.push('');
     });
     return lineJoin(output);
   }
 
   if (hasWarnings) {
-    output.push(&#x27;{yellow-fg}Compiled with warnings.{/yellow-fg}&#x27;);
-    output.push(&#x27;&#x27;);
+    output.push('{yellow-fg}Compiled with warnings.{/yellow-fg}');
+    output.push('');
     formattedWarnings.forEach(function(message) {
       output.push(message);
-      output.push(&#x27;&#x27;);
+      output.push('');
     });
 
     return lineJoin(output);
@@ -386,3 +379,4 @@
     ]
 </div>
 </div>
+</body></html>
