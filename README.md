@@ -1,9 +1,11 @@
 # api documentation for  [webpack-dashboard (v0.3.0)](https://github.com/FormidableLabs/webpack-dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard)
 #### a CLI dashboard for webpack dev server
 
-[![NPM](https://nodei.co/npm/webpack-dashboard.png?downloads=true)](https://www.npmjs.com/package/webpack-dashboard)
+[![NPM](https://nodei.co/npm/webpack-dashboard.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/webpack-dashboard)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-webpack-dashboard_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/screenCapture.npmPackageListing.svg)
 
@@ -52,16 +54,13 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "exogen",
-            "email": "exogen@gmail.com"
+            "name": "exogen"
         },
         {
-            "name": "stefvhuynh",
-            "email": "huynh.stefan@gmail.com"
+            "name": "stefvhuynh"
         },
         {
-            "name": "thekenwheeler",
-            "email": "ken_wheeler@me.com"
+            "name": "thekenwheeler"
         }
     ],
     "name": "webpack-dashboard",
@@ -69,7 +68,6 @@
     "peerDependencies": {
         "webpack": "*"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/FormidableLabs/webpack-dashboard.git"
@@ -80,16 +78,6 @@
     "version": "0.3.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module webpack-dashboard](#apidoc.module.webpack-dashboard)
-
-
-
-# <a name="apidoc.module.webpack-dashboard"></a>[module webpack-dashboard](#apidoc.module.webpack-dashboard)
 
 
 
