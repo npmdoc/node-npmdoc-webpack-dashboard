@@ -1,4 +1,7 @@
-# api documentation for  [webpack-dashboard (v0.3.0)](https://github.com/FormidableLabs/webpack-dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard)
+# npmdoc-webpack-dashboard
+
+#### basic api documentation for  [webpack-dashboard (v0.3.0)](https://github.com/FormidableLabs/webpack-dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-dashboard)
+
 #### a CLI dashboard for webpack dev server
 
 [![NPM](https://nodei.co/npm/webpack-dashboard.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/webpack-dashboard)
